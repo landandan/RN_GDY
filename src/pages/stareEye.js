@@ -16,7 +16,7 @@ import Pai from "../components/Pai";
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flexGrow: 1,
         backgroundColor: '#F5F5F5',
     },
     imgStyle: {
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         height: 140,
         backgroundColor:'transparent',
         flexDirection:'row',
-        flex:1,
+        flexGrow:1,
         justifyContent:'space-between',
         alignItems:'center'
     },
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         height: 140,
         backgroundColor:'transparent',
         flexDirection:'row',
-        flex:1,
+        flexGrow:1,
         justifyContent:'space-between',
         alignItems:'center'
     },
