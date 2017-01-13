@@ -7,7 +7,7 @@ import type { Action } from '../actions/type'
 
 export type Route = {page: string}
 
-const initialRoute = { page: 'LoginPage' }
+const initialRoute = { page: 'StareEye' }
 
 export default function route(routes: Array<Route> = [initialRoute], action: Action): Array<Route> {
   if (action.type === 'PUSH_ROUTE') {

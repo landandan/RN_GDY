@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
 })
 
 class App extends Component {
-    constructor() {
-        super()
+    constructor(p) {
+        super(p)
         this.state = {
             store: null,
         }
