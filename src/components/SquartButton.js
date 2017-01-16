@@ -5,24 +5,27 @@ import {
     StyleSheet,
     TextInput,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    Dimensions
 } from 'react-native'
+const { height, width } = Dimensions.get('window')
+
 const styles = StyleSheet.create({
     borderStyle:{
-        width:50,
-        height:50,
-        borderRadius:50,
+        width:height/3/140*50,
+        height:height/3/140*50,
+        borderRadius:height/3/140*50,
         backgroundColor:'white',
         borderWidth:2,
         alignItems:'center',
         position:'absolute',
     },
     wordStyle:{
-        width:50,
-        height:50,
+        width:height/3/140*50,
+        height:height/3/140*50,
         backgroundColor:'transparent',
         textAlign:'center',
-        lineHeight:40,
+        lineHeight:height/3/140*40,
     }
 })
 

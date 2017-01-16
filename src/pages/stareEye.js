@@ -69,8 +69,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 16,
     color: 'orange'
-  }
+  },
 })
+
 class StareEye extends Component {
   constructor(props) {
     super(props)
@@ -142,59 +143,59 @@ class StareEye extends Component {
                 residue={5}
                 integral={100}
               />
-              <View style={[styles.wordCenter,{width:200,height:140}]}>
+              <View style={{width:width/3.5,height:height/3}}>
                 <Pai
                   pai={require('../../resources/pai/pai_01_1.png')}
-                  style={{left:0,top:0,}}
+                  style={{left:0,}}
                 />
                 <Pai
                   pai={require('../../resources/pai/pai_01_1.png')}
-                  style={{left:30,borderLeftColor:'#ccc',borderLeftWidth:1,}}
+                  style={{left:width/3.5*3/20,borderLeftColor:'#ccc',borderLeftWidth:1,}}
                 />
                 <Pai
                   pai={require('../../resources/pai/pai_01_1.png')}
-                  style={{left:60,borderLeftColor:'#ccc',borderLeftWidth:1}}
+                  style={{left:width/3.5*3/10,borderLeftColor:'#ccc',borderLeftWidth:1}}
                 />
                 <Pai
                   pai={require('../../resources/pai/pai_01_1.png')}
-                  style={{left:90,borderLeftColor:'#ccc',borderLeftWidth:1}}
+                  style={{left:width/3.5*9/20,borderLeftColor:'#ccc',borderLeftWidth:1}}
                 />
                 <Pai
                   pai={require('../../resources/pai/pai_02_1.png')}
-                  style={{left:120,borderLeftColor:'#ccc',borderLeftWidth:1}}
+                  style={{left:width/3.5*3/5,borderLeftColor:'#ccc',borderLeftWidth:1}}
                 />
               </View>
-              <View style={[styles.wordCenter,{height:140,width:160}]}>
+              <View style={{height:height/3,width:width/4}}>
                 <SquartButton
                   style={{
-                                        left:20,
-                                        bottom:10,
+                                        left:width/4/7,
+                                        bottom:height/3/14,
                                     }}
                   word='托管'
                 />
                 <SquartButton
                   style={{
-                                        right:10,
-                                        top:10,
+                                        right:width/3/16,
+                                        top:0,
                                     }}
                   word='不出'
                 />
                 <SquartButton
                   style={{
-                                        left:45,
-                                        top:30,
+                                        left:width/4*48/160,
+                                        top:height/3*3/14,
                                     }}
                   word='提示'
                 />
                 <SquartButton
                   style={{
-                                        right:10,
-                                        bottom:10,
-                                        width:60,
-                                        height:60
+                                        right:width/4/16,
+                                        bottom:height/3/14,
+                                        width:height/3/140*60,
+                                        height:height/3/140*60
                                     }}
                   style1={{
-                                        lineHeight:50
+                                        lineHeight:height/3/140*50
                                     }}
                   word='出牌'
                 />
