@@ -5,11 +5,20 @@ import {
     StyleSheet,
     TextInput,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    Dimensions
 } from 'react-native'
+const { height, width } = Dimensions.get('window')
+
 const styles = StyleSheet.create({
     position:{
         position:'absolute',
+        width:90*115/140,
+        height:height/3*115/140,
+    },
+    imageStyle:{
+        width:90*115/140,
+        height:height/3*120/140,
     }
 })
 
@@ -22,7 +31,8 @@ const Pai = (props:{
             style={[styles.position,props.style]}
         >
             <Image
-                resizeMode='contain'
+                style={styles.imageStyle}
+                resizeMode='stretch'
                 source={props.pai}
             />
         </View>
